@@ -1,1 +1,1 @@
-# terraform-alicloud-mns
+# terraform-alicloud-mns-queue
