@@ -1,9 +1,3 @@
-provider "alicloud" {
-  version              = ">=1.56.0"
-  region               = var.region != "" ? var.region : null
-  configuration_source = "terraform-alicloud-modules/mns-queue"
-}
-
 resource "alicloud_mns_queue" "this_queue" {
   name                     = var.name
   delay_seconds            = var.delay_seconds
