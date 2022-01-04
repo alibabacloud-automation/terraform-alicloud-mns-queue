@@ -5,4 +5,3 @@ locals {
 output "queue_name" {
   value = local.this_queue_name
 }
-
