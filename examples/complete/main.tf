@@ -1,5 +1,6 @@
-resource "alicloud_mns_queue" "this_queue" {
-  name                     = var.name
+module "example" {
+  source                   = "../.."
+  name                     = "tf-example"
   delay_seconds            = var.delay_seconds
   maximum_message_size     = var.maximum_message_size
   message_retention_period = var.message_retention_period

@@ -1,15 +1,3 @@
-variable "region" {
-  description = "(Deprecated from version 1.2.0) The region used to launch this module resources."
-  type        = string
-  default     = ""
-}
-
-variable "name" {
-  description = "Two queues on a single account in the same region cannot have the same name. A queue name must start with an English letter or a digit, and can contain English letters, digits, and hyphens, with the length not exceeding 256 characters."
-  type        = string
-  default     = ""
-}
-
 variable "delay_seconds" {
   description = "This attribute defines the length of time, in seconds, after which every message sent to the queue is dequeued. Valid value range: 0-604800 seconds, i.e., 0 to 7 days."
   type        = number
@@ -39,4 +27,3 @@ variable "polling_wait_seconds" {
   type        = number
   default     = 0
 }
-
