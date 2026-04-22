@@ -1,3 +1,7 @@
+locals {
+  this_queue_name = alicloud_mns_queue.this_queue.name
+}
+
 resource "alicloud_mns_queue" "this_queue" {
   name                     = var.name
   delay_seconds            = var.delay_seconds
